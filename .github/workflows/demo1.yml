@@ -4,7 +4,8 @@ on:
     types:
       - opened
       - closed
-  workflow_dispatch:     
+  workflow_dispatch:    
+  push: 
 jobs:
   deploy:
     runs-on: ubuntu-latest
