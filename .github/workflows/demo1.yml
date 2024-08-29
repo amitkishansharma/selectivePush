@@ -4,10 +4,12 @@ on:
     types:
       - opened
       - closed
+
   workflow_dispatch:    
   push: 
     branches: 
       - master
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -23,4 +25,4 @@ jobs:
       - name: Build code
         run: npm run build
       - name: Deploy project
-        run: echo "Deploying..."
+        run: echo "Deploying...... and it will not print"
